@@ -3,6 +3,7 @@ import Image from "next/image";
 import LandingBg from '../../public/landing_bg.png'
 import AcademicBg from '../../public/academic_bg.png'
 import Navbar from "@/components/Navbar";
+import Timeline from "@/components/Timeline";
 import Link from "next/link";
 
 const lastProjects = [
@@ -87,7 +88,7 @@ export default function Home() {
 
         </section>
 
-        <section className="px-6 mx-auto xl:max-w-7xl pt-8 pb-32 xl:py-32 relative">
+        <section className="px-6 mx-auto xl:max-w-7xl pt-8 pb-32 xl:py-32 space-y-16 relative">
 
           <div className="bg-cyan pt-6 pl-6 pb-12 pr-8 xl:pr-36 mb-12 rounded-2xl max-w-lg relative xl:absolute xl:-top-40 xl:right-32 transition-all">
             <div className="flex flex-col justify-start space-y-4">
@@ -111,14 +112,17 @@ export default function Home() {
             </div>      
           </div>
 
-          <div className="flex flex-row items-center gap-4 relative grow-0">
+          <div className="flex flex-row items-center gap-4 relative">
             <h2 className="text-2xl xl:text-4xl font-bold">Experiência</h2>
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <circle cx="16" cy="16" r="16" fill="#0054FF"/>
             </svg>
           </div>
 
+          <Timeline/>
+          
         </section>
+
 
       </main>
   )
