@@ -103,7 +103,7 @@ export default function Home() {
                       >
                         <strong className="h-[22px] aspect-square bg-background rounded-2xl items-center justify-center flex m-1 text-sm font-light">{project.id}</strong>
                         <div className="flex flex-col gap-2">
-                          <Link href='/portfolio' className="font-medium text-xl hover:text-yellow cursor-pointer">{project.project} - {project.title}</Link>
+                          <Link href='/portfolio' className="font-semibold leading-tight text-xl hover:text-yellow cursor-pointer">{project.project} - {project.title}</Link>
                           <strong className="font-light text-xs uppercase"><b className="font-medium">{project.company}</b> {project.date}</strong>
                         </div>
                       </div>

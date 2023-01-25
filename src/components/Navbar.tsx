@@ -12,7 +12,7 @@ export default function Navbar() {
         <div>
           <div className="flex items-center justify-between py-8 md:block">
             <Link href="#">
-              <h2 className="text-xl text-white font-bold">Cassio Reis</h2>
+              <h2 className="text-xl text-white font-semibold">@creisbarbosa</h2>
             </Link>
             <div className="md:hidden">
               <button
@@ -35,24 +35,24 @@ export default function Navbar() {
             }`}
           >
             <ul className="text-xl items-center justify-center space-y-6 md:flex md:space-x-12 md:space-y-0">
-              <li className="text-white">
-                <Link href="/about'">
-                  Sobre
+              <li className="text-white hover:text-yellow transition-colors">
+                <Link href="/about">
+                  sobre
                 </Link>
               </li>
-              <li className="text-white">
-                <Link href="/experience'">
-                  Experiência
+              <li className="text-white hover:text-yellow transition-colors">
+                <Link href="/experience">
+                  experiência
                 </Link>
               </li>
-              <li className="text-white">
+              <li className="text-white hover:text-yellow transition-colors">
                 <Link href="/contact">
-                  Contato
+                  contato
                 </Link>
               </li>
-              <li className="text-white">
+              <li className="text-white hover:text-yellow transition-colors">
                 <Link href="/portfolio">
-                  Portfólio
+                  portfólio
                 </Link>
               </li>
             </ul>

@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -18,7 +20,12 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
-      }
+      },
+
+      fontFamily: {
+        sans: ['var(--font-poly)', ...fontFamily.sans],
+      },
+
     },
   },
   plugins: [],
