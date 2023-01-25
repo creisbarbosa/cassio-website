@@ -62,7 +62,7 @@ export default function Timeline() {
 
   return (
     <section className="relative pt-24">
-      <div className="flex gap-16 items-top items-start justify-center">
+      <div className="flex gap-2 lg:gap-16 items-top items-start justify-center">
         <div className="flex flex-col gap-32">
           {jobTimeLine.map((job) => {
             if (job.id % 2 !== 0)
@@ -74,10 +74,10 @@ export default function Timeline() {
                 <h2 className="text-2xl font-bold">{job.company}</h2>
                 <strong className="text-sm font-normal text-white/60">{job.role}</strong>
                 <strong className="text-sm text-white/60">{job.period}</strong>
-                <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
-                <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
-                <p className="text-cyan mt-3 max-w-[25rem]">{job.firstSkills}</p>
-                <p className="text-cyan max-w-[25rem]">{job.secondSkills}</p>
+                <p className="text-white/80 text-xs lg:text-base mt-5 max-w-[25rem]">{job.text}</p>
+                <h3 className="text-cyan text-xs lg:text-base font-bold mt-3">Novas habilidades ↙</h3>
+                <p className="text-cyan text-xs lg:text-base mt-3 max-w-[25rem]">{job.firstSkills}</p>
+                <p className="text-cyan text-xs lg:text-base max-w-[25rem]">{job.secondSkills}</p>
               </div>
             )
           })}
@@ -96,10 +96,10 @@ export default function Timeline() {
                 <h2 className="text-2xl font-bold">{job.company}</h2>
                 <strong className="text-sm font-normal text-white/60">{job.role}</strong>
                 <strong className="text-sm text-white/60">{job.period}</strong>
-                <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
-                <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
-                <p className="text-cyan mt-3">{job.firstSkills}</p>
-                <p className="text-cyan max-w-[25rem]">{job.secondSkills}</p>
+                <p className="text-white/80 text-xs lg:text-base mt-5 max-w-[25rem]">{job.text}</p>
+                <h3 className="text-cyan text-xs lg:text-base font-bold mt-3">Novas habilidades ↙</h3>
+                <p className="text-cyan text-xs lg:text-base mt-3">{job.firstSkills}</p>
+                <p className="text-cyan text-xs lg:text-base max-w-[25rem]">{job.secondSkills}</p>
               </div>
             )
           })}
