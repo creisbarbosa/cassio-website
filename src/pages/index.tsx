@@ -1,31 +1,50 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import LandingBg from '../../public/landing_bg.png'
 import AcademicBg from '../../public/academic_bg.png'
+import Navbar from "@/components/Navbar";
+import Link from "next/link";
+
+const lastProjects = [
+  {
+    company: "Peerdustry",
+    project: "Peer System",
+    title: "Industry startup Design System",
+    date: "JUL 22",
+    id: 1
+  },
+  {
+    company: "Artis Tecnologia",
+    project: "Sonatus",
+    title: "Ultrasonic Surgical Aspirator",
+    date: "JAN 21",
+    id: 2
+  },
+  {
+    company: "Artis Tecnologia",
+    project: "Eximius",
+    title: "Surgical Navigator",
+    date: "JUL 20",
+    id: 3
+  },
+]
 
 export default function Home() {
   return (
     <>
       <main>
         {/*Landing */}
-        <section className="overflow-hidden h-screen">
+        <section>
           <Image src={LandingBg} alt="" className="absolute h-full w-full object-cover"/>
 
-          <nav className="flex items-center justify-between text-xl px-16 xl:px-32 py-8 relative">
-            <h1 className="font-bold">Cassio Reis</h1>
-            <ul className="flex gap-3">
-              <li className="px-4 py-2"><Link href={'/about'}>Sobre</Link></li>
-              <li className="px-4 py-2">Experiência</li>
-              <li className="px-4 py-2"><Link href={'/contact'}>Contato</Link></li>
-              <li className="px-4 py-2"><Link href={'/portfolio'}>Portfólio</Link></li>
-            </ul>
-          </nav>
+          <Navbar />
 
-          <div className="flex px-16 xl:px-32 h-[87%] relative">
-            <div className="basis-1/2 flex items-center">
-              <div className="space-y-16">
-                <h1 className="text-5xl leading-tight">
+          <div className="flex flex-col xl:flex-row px-6 mx-auto xl:max-w-7xl py-6 xl:py-32 w-full relative gap-16">
+
+            <div className="basis-1 xl:basis-1/2 flex items-center">
+
+              <div className="space-y-8 xl:space-y-16">
+                <h1 className="text-4xl xl:text-5xl leading-tight">
                   Olá! <br />
                   Sou Cassio Reis <br />
                   &lsaquo;<b>Product Designer</b> /&rsaquo; <br />
@@ -35,9 +54,10 @@ export default function Home() {
                 <p className="text-white/70 text-base leading-normal"><b className="text-white">Sou Designer de Produtos de formação e me venho me aperfeiçoando como Desenvolvedor Front-end.</b> Já pude atuar em diversas frentes e projetos relacionados a setores da indústria como varejo, hospitalar, alimentos e organizações públicas. Atualmente faço parte do time da Peerdustry como Designer Sr. e Front-end Jr.</p>
               </div>
             </div>
-            <div className="basis-1/2 flex items-center justify-center">
 
-              <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute top-44 right-44">
+            <div className="basis-1 xl:basis-1/2 flex items-center justify-center">
+
+              <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute top-0 xl:top-24 right-8 xl:right-24">
                 <circle cx="31" cy="31" r="31" fill="#0054FF"/>
               </svg>
 
@@ -49,25 +69,57 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-16 xl:px-32 pt-16 pb-32 space-y-16 overflow-hidden relative">
+        <section className="px-6 pt-2 xl:pt-16 pb-8 xl:pb-28 space-y-16 relative overflow-hidden">
 
           <Image src={AcademicBg} alt="" className="absolute h-full w-full object-cover"/>
+          <div className="xl:px-6 mx-auto xl:max-w-7xl">
+            <div className="flex flex-row items-center gap-4 relative">
+              <h2 className="text-2xl xl:text-4xl font-bold">Formação Acadêmica</h2>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.1571 10.1831L16 0L14.8429 10.1831L9.87706 1.21794L12.705 11.0687L4.68629 4.68629L11.0687 12.705L1.21792 9.87708L10.1831 14.843L0 16L10.1831 17.1571L1.21792 22.1229L11.0687 19.295L4.68629 27.3137L12.705 20.9313L9.87706 30.7821L14.8429 21.8169L16 32L17.157 21.8169L22.1229 30.7821L19.295 20.9313L27.3137 27.3137L20.9313 19.295L30.7821 22.1229L21.8169 17.1571L32 16L21.8169 14.8429L30.7821 9.87708L20.9313 12.705L27.3137 4.68629L19.295 11.0687L22.1229 1.21794L17.1571 10.1831Z" fill="#FF9600"/>
+              </svg>
+            </div>
 
-          <div className="flex flex-row items-center gap-4 relative">
-            <h2 className="text-4xl font-bold">Formação Acadêmica</h2>
+            <div className="space-y-2 relative">
+              <h3 className="text-xl xl:text-2xl font-semibold xl:font-bold">Desenho Industrial</h3>
+              <strong className="text-gray-400">2011-2016</strong>
+              <p className="pt-3 max-w-md">Curso de bacharelado em Desenho Industrial com foco em Projeto de Produto concluído pela  Universidade de Brasília.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <section className="px-6 mx-auto xl:max-w-7xl pt-8 pb-32 xl:py-32 relative">
+
+          <div className="bg-cyan pt-6 pl-6 pb-12 pr-8 xl:pr-36 mb-12 rounded-2xl max-w-lg relative xl:absolute xl:-top-40 xl:right-32 transition-all">
+            <div className="flex flex-col justify-start space-y-4">
+              <h3 className="uppercase font-bold text-xs">Últimos projetos</h3>
+              <div className="space-y-4 xl:space-y-10">
+                  {lastProjects.map((project) => {
+                    return (
+                      <div 
+                        key={project.id}
+                        className="flex flex-row gap-3 pb-6 mx-auto max-w-md border-b border-solid border-yellow"
+                      >
+                        <strong className="h-[22px] aspect-square bg-background rounded-2xl items-center justify-center flex m-1 text-sm font-light">{project.id}</strong>
+                        <div className="flex flex-col gap-2">
+                          <Link href='/portfolio' className="font-medium text-xl hover:text-yellow cursor-pointer">{project.project} - {project.title}</Link>
+                          <strong className="font-light text-xs uppercase"><b className="font-medium">{project.company}</b> {project.date}</strong>
+                        </div>
+                      </div>
+                    )
+                  })}
+              </div>
+            </div>      
+          </div>
+
+          <div className="flex flex-row items-center gap-4 relative grow-0">
+            <h2 className="text-2xl xl:text-4xl font-bold">Experiência</h2>
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M17.1571 10.1831L16 0L14.8429 10.1831L9.87706 1.21794L12.705 11.0687L4.68629 4.68629L11.0687 12.705L1.21792 9.87708L10.1831 14.843L0 16L10.1831 17.1571L1.21792 22.1229L11.0687 19.295L4.68629 27.3137L12.705 20.9313L9.87706 30.7821L14.8429 21.8169L16 32L17.157 21.8169L22.1229 30.7821L19.295 20.9313L27.3137 27.3137L20.9313 19.295L30.7821 22.1229L21.8169 17.1571L32 16L21.8169 14.8429L30.7821 9.87708L20.9313 12.705L27.3137 4.68629L19.295 11.0687L22.1229 1.21794L17.1571 10.1831Z" fill="#FF9600"/>
+              <circle cx="16" cy="16" r="16" fill="#0054FF"/>
             </svg>
-
           </div>
 
-          <div className="space-y-2 relative">
-
-            <h3 className="text-2xl font-bold">Desenho Industrial</h3>
-            <strong className="text-gray-400">2011-2016</strong>
-            <p className="pt-3 max-w-md">Curso de bacharelado em Desenho Industrial com foco em Projeto de Produto concluído pela  Universidade de Brasília.</p>
-
-          </div>
         </section>
 
       </main>

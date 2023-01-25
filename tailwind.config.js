@@ -11,7 +11,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#131313"
+        background: "#131313",
+        cyan: "#0054FF",
+        yellow: "#FF9600",
+
       },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
