@@ -15,7 +15,7 @@ export default function Footer() {
       <Image src={Background} alt="" className="absolute h-full w-full object-cover"/>
       <div className="flex flex-row relative pt-12 pb-20 pl-6 pr-12 lg:py-32 lg:px-32 gap-6 xl:gap-8 xl:justify-between">
         <div className="flex flex-start">
-          <ArrowUp size={32} weight="bold" className="text-white animate-bounce" onClick={backToTop}/>
+          <ArrowUp size={32} weight="bold" className="text-white animate-bounce cursor-pointer hover:animate-none hover:fill-white/10 transition-colors" onClick={backToTop}/>
         </div>
         <div className="flex flex-col w-full justify-end lg:flex-row gap-8">
           <ul className="flex flex-col gap-2 lg:text-right">
