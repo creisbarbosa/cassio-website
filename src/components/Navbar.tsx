@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import { List, X } from 'phosphor-react';
 import { useState } from 'react';

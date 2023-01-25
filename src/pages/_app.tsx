@@ -1,3 +1,4 @@
+import Footer from '@/components/Footer'
 import '@/styles/globals.css'
 import localFont from '@next/font/local'
 import type { AppProps } from 'next/app'
@@ -32,6 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={polySans.className}>
       <Component {...pageProps} />
+      <Footer />
     </main>
   )
 }

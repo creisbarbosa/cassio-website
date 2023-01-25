@@ -31,9 +31,7 @@ const lastProjects = [
 
 export default function Home() {
   return (
-    <>
       <main>
-        {/*Landing */}
         <section>
           <Image src={LandingBg} alt="" className="absolute h-full w-full object-cover"/>
 
@@ -44,7 +42,7 @@ export default function Home() {
             <div className="basis-1 xl:basis-1/2 flex items-center">
 
               <div className="space-y-8 xl:space-y-16">
-                <h1 className="text-4xl xl:text-5xl leading-tight">
+                <h1 className="text-[2rem] xl:text-5xl xl:leading-snug">
                   Olá! <br />
                   Sou Cassio Reis <br />
                   &lsaquo;<b>Product Designer</b> /&rsaquo; <br />
@@ -103,7 +101,7 @@ export default function Home() {
                       >
                         <strong className="h-[22px] aspect-square bg-background rounded-2xl items-center justify-center flex m-1 text-sm font-light">{project.id}</strong>
                         <div className="flex flex-col gap-2">
-                          <Link href='/portfolio' className="font-semibold leading-tight text-xl hover:text-yellow cursor-pointer">{project.project} - {project.title}</Link>
+                          <Link href='/portfolio' className="font-semibold leading-tight text-xl hover:text-yellow cursor-pointer transition-colors">{project.project} - {project.title}</Link>
                           <strong className="font-light text-xs uppercase"><b className="font-medium">{project.company}</b> {project.date}</strong>
                         </div>
                       </div>
@@ -123,6 +121,5 @@ export default function Home() {
         </section>
 
       </main>
-    </>
   )
 }
