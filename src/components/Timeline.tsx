@@ -62,7 +62,7 @@ export default function Timeline() {
   ]
 
   return (
-    <section className="relative pt-24">
+    <section className="relative pt-24 overflow-hidden">
       <div className="invisible h-0 overflow-hidden md:visible md:h-full">
         <div className="flex gap-2 lg:gap-16 items-top items-start justify-center">
           <div className="flex flex-col gap-32">
@@ -108,8 +108,8 @@ export default function Timeline() {
           </div>
         </div>
       </div>
-      <div className="md:invisible md:h-0 md:overflow-hidden -mt-20">
-        <div className="flex gap-2 items-start">
+      <div className="md:invisible md:h-0 md:overflow-hidden">
+        <div className="flex gap-6 items-start -mt-24">
           <Image src={TimeLineMobile} alt="" className="translate-y-3"/>
           <div className="flex flex-col gap-12 items-top">
             {jobTimeLine.map((job) => {
@@ -118,6 +118,16 @@ export default function Timeline() {
                 key={job.id}
                 className="text-white flex flex-col gap-2 basis-1/2 items-start"
                 >
+                  <svg 
+                    width="14" 
+                    height="14" 
+                    viewBox="0 0 12 12" 
+                    fill="none" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="absolute left-0 translate-y-3"
+                  >
+                    <circle cx="6" cy="6" r="6" fill="#0054FF"/>
+                  </svg>
                   <h2 className="text-2xl font-bold">{job.company}</h2>
                   <strong className="text-sm font-normal text-white/60">{job.role}</strong>
                   <strong className="text-sm text-white/60">{job.period}</strong>

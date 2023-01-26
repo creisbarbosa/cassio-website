@@ -40,9 +40,11 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="text-white hover:text-yellow transition-colors">
-                <Link href="/experience">
+                <div 
+                  onClick={() => window.location.replace("/#timeline")}
+                >
                   experiência
-                </Link>
+                </div>
               </li>
               <li className="text-white hover:text-yellow transition-colors">
                 <Link href="/contact">
