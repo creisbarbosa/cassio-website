@@ -1,5 +1,6 @@
 import Image from "next/image"
 import TimeLine from "../../public/timeline.svg"
+import TimeLineMobile from "../../public/timeline_mobile.svg"
 
 export default function Timeline() {
 
@@ -62,47 +63,72 @@ export default function Timeline() {
 
   return (
     <section className="relative pt-24">
-      <div className="flex gap-2 lg:gap-16 items-top items-start justify-center">
-        <div className="flex flex-col gap-32">
-          {jobTimeLine.map((job) => {
-            if (job.id % 2 !== 0)
-            return (
-              <div
-              key={job.id}
-              className="text-white flex flex-col gap-2 text-right basis-1/2 items-end"
-              >
-                <h2 className="text-2xl font-bold">{job.company}</h2>
-                <strong className="text-sm font-normal text-white/60">{job.role}</strong>
-                <strong className="text-sm text-white/60">{job.period}</strong>
-                <p className="text-white/80 text-xs lg:text-base mt-5 max-w-[25rem]">{job.text}</p>
-                <h3 className="text-cyan text-xs lg:text-base font-bold mt-3">Novas habilidades ↙</h3>
-                <p className="text-cyan text-xs lg:text-base mt-3 max-w-[25rem]">{job.firstSkills}</p>
-                <p className="text-cyan text-xs lg:text-base max-w-[25rem]">{job.secondSkills}</p>
-              </div>
-            )
-          })}
-        </div>
+      <div className="invisible h-0 overflow-hidden md:visible md:h-full">
+        <div className="flex gap-2 lg:gap-16 items-top items-start justify-center">
+          <div className="flex flex-col gap-32">
+            {jobTimeLine.map((job) => {
+              if (job.id % 2 !== 0)
+              return (
+                <div
+                key={job.id}
+                className="text-white flex flex-col gap-2 text-right basis-1/2 items-end"
+                >
+                  <h2 className="text-2xl font-bold">{job.company}</h2>
+                  <strong className="text-sm font-normal text-white/60">{job.role}</strong>
+                  <strong className="text-sm text-white/60">{job.period}</strong>
+                  <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
+                  <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
+                  <p className="text-cyan mt-3 max-w-[25rem]">{job.firstSkills}</p>
+                  <p className="text-cyan max-w-[25rem]">{job.secondSkills}</p>
+                </div>
+              )
+            })}
+          </div>
 
-        <Image src={TimeLine} alt=""/>
-          
-        <div className="flex flex-col gap-28 pt-52">
-          {jobTimeLine.map((job) => {
-            if (job.id % 2 === 0)
-            return (
-              <div
-              key={job.id}
-              className="text-white flex flex-col gap-2 basis-1/2 py-8"
-              >
-                <h2 className="text-2xl font-bold">{job.company}</h2>
-                <strong className="text-sm font-normal text-white/60">{job.role}</strong>
-                <strong className="text-sm text-white/60">{job.period}</strong>
-                <p className="text-white/80 text-xs lg:text-base mt-5 max-w-[25rem]">{job.text}</p>
-                <h3 className="text-cyan text-xs lg:text-base font-bold mt-3">Novas habilidades ↙</h3>
-                <p className="text-cyan text-xs lg:text-base mt-3">{job.firstSkills}</p>
-                <p className="text-cyan text-xs lg:text-base max-w-[25rem]">{job.secondSkills}</p>
-              </div>
-            )
-          })}
+          <Image src={TimeLine} alt=""/>
+            
+          <div className="flex flex-col gap-28 pt-52">
+            {jobTimeLine.map((job) => {
+              if (job.id % 2 === 0)
+              return (
+                <div
+                key={job.id}
+                className="text-white flex flex-col gap-2 basis-1/2 py-8"
+                >
+                  <h2 className="text-2xl font-bold">{job.company}</h2>
+                  <strong className="text-sm font-normal text-white/60">{job.role}</strong>
+                  <strong className="text-sm text-white/60">{job.period}</strong>
+                  <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
+                  <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
+                  <p className="text-cyan mt-3">{job.firstSkills}</p>
+                  <p className="text-cyan max-w-[25rem]">{job.secondSkills}</p>
+                </div>
+              )
+            })}
+          </div>
+        </div>
+      </div>
+      <div className="md:invisible md:h-0 md:overflow-hidden -mt-20">
+        <div className="flex gap-2 items-start">
+          <Image src={TimeLineMobile} alt="" className="translate-y-3"/>
+          <div className="flex flex-col gap-12 items-top">
+            {jobTimeLine.map((job) => {
+              return (
+                <div
+                key={job.id}
+                className="text-white flex flex-col gap-2 basis-1/2 items-start"
+                >
+                  <h2 className="text-2xl font-bold">{job.company}</h2>
+                  <strong className="text-sm font-normal text-white/60">{job.role}</strong>
+                  <strong className="text-sm text-white/60">{job.period}</strong>
+                  <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
+                  <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
+                  <p className="text-cyan mt-3 max-w-[25rem]">{job.firstSkills}</p>
+                  <p className="text-cyan max-w-[25rem]">{job.secondSkills}</p>
+                </div>
+              )
+            })}
+          </div>
         </div>
       </div>
     </section>

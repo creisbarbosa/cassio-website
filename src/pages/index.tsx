@@ -50,7 +50,7 @@ export default function Home() {
                   &lsaquo;<b>Front-end Dev</b> /&rsaquo; <br />
                   de Brasília - DF
                 </h1>
-                <p className="text-white/70 text-base leading-normal"><b className="text-white">Sou Designer de Produtos de formação e me venho me aperfeiçoando como Desenvolvedor Front-end.</b> Já pude atuar em diversas frentes e projetos relacionados a setores da indústria como varejo, hospitalar, alimentos e organizações públicas. Atualmente faço parte do time da Peerdustry como Designer Sr. e Front-end Jr.</p>
+                <p className="text-white/70 text-base leading-normal"><b className="text-white">Sou Designer de Produtos de formação e venho me aperfeiçoando como Desenvolvedor Front-end.</b> Já pude atuar em diversas frentes e projetos relacionados a setores da indústria como varejo, hospitalar, alimentos e organizações públicas. Atualmente faço parte do time da Peerdustry como Designer Sr. e Front-end Jr.</p>
               </div>
             </div>
 
