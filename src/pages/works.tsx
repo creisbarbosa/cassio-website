@@ -4,6 +4,8 @@ import Link from "next/link";
 import PaperCase from "../../public/paper_case.jpg"
 import Instruments from "../../public/instruments.jpg"
 import Namoradeira from "../../public/chair.webp"
+import PeerWeb from "../../public/peer_website.png"
+
 import Cover from "../../public/work_bg.png"
 
 const projects = [
@@ -24,6 +26,12 @@ const projects = [
     title: "Namoradeira",
     href: "https://www.behance.net/gallery/54382249/Namoradeira",
     cover: Namoradeira,
+  },
+  {
+    id: 4,
+    title: "Peerdustry Website",
+    href: "https://peer-website.vercel.app/",
+    cover: PeerWeb,
   },
 ]
 
