@@ -39,7 +39,7 @@ export default function Works() {
   return (
     <section>
       <div className="flex flex-col px-6 mx-auto xl:max-w-7xl py-6 xl:py-20 gap-12 lg:gap-16">
-        <div className="h-screen">
+        <div className="min-h-screen pb-3">
           <div className="flex flex-col gap-8 xl:grid xl:grid-cols-4">
             {projects.map(project => {
               return (
