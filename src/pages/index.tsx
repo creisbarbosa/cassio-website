@@ -1,8 +1,6 @@
 import Image from "next/image";
 
-import LandingBg from '../../public/landing_bg.png'
 import AcademicBg from '../../public/academic_bg.png'
-import Navbar from "@/components/Navbar";
 import Timeline from "@/components/Timeline";
 import Link from "next/link";
 
@@ -34,12 +32,7 @@ export default function Home() {
   return (
       <main>
         <section>
-          <Image src={LandingBg} alt="" className="absolute h-full w-full object-cover"/>
-          <Navbar />
-
-
           <div className="flex flex-col xl:flex-row px-6 mx-auto xl:max-w-7xl py-6 xl:py-20 w-full relative gap-16">
-
             <div className="basis-1 xl:basis-1/2 flex items-center">
 
               <div className="space-y-8 xl:space-y-16">
@@ -56,7 +49,7 @@ export default function Home() {
 
             <div className="basis-1 xl:basis-1/2 flex items-center justify-center">
 
-              <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute top-0 xl:top-24 right-8 xl:right-24">
+              <svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute top-8 xl:top-24 right-8 xl:right-24">
                 <circle cx="31" cy="31" r="31" fill="#0054FF"/>
               </svg>
 
@@ -85,14 +78,10 @@ export default function Home() {
               <p className="pt-3 max-w-md">Curso de bacharelado em Desenho Industrial com foco em Projeto de Produto concluído pela  Universidade de Brasília.</p>
             </div>
           </div>
-
         </section>
 
-        <section 
-          className="px-6 mx-auto xl:max-w-7xl pt-8 pb-32 xl:py-32 space-y-16 relative"
-        >
-
-          <div className="bg-cyan pt-6 pl-6 pb-12 pr-8 xl:pr-36 mb-12 rounded-2xl max-w-lg relative xl:absolute xl:-top-40 xl:right-32 transition-all">
+        <section className="px-6 mx-auto xl:max-w-7xl pt-8 pb-32 xl:py-32 space-y-16 relative">
+          <div className="bg-cyan pt-6 pl-6 pb-12 pr-8 xl:pr-36 mb-12 rounded-2xl max-w-lg relative xl:absolute xl:-top-40 xl:right-16 transition-all">
             <div className="flex flex-col justify-start space-y-4">
               <h3 className="uppercase font-bold text-xs">Últimos projetos</h3>
               <div className="space-y-4 xl:space-y-10">
@@ -114,11 +103,14 @@ export default function Home() {
             </div>      
           </div>
 
-          <div className="flex flex-row items-center gap-4 relative" id="timeline">
-            <h2 className="text-2xl xl:text-4xl font-bold">Experiência</h2>
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="16" cy="16" r="16" fill="#0054FF"/>
-            </svg>
+          <div className="flex flex-col gap-8 pt-4 relative" id="timeline">
+            <div className="flex flex-row items-center gap-4">
+              <h2 className="text-2xl xl:text-4xl font-bold">Experiência</h2>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="16" r="16" fill="#0054FF"/>
+              </svg>
+            </div>
+            <p className="md:max-w-xl md:text-xl font-light text-white/90">Sei compreender necessidades, descobrir dores e propor soluções relevantes que elevam as experiências enquanto auxiliam os objetivos estratégicos da empresa.</p>
           </div>
 
           <Timeline/>

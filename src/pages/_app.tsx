@@ -1,4 +1,5 @@
 import Footer from '@/components/Footer'
+import Navbar from '@/components/Navbar'
 import '@/styles/globals.css'
 import localFont from '@next/font/local'
 import type { AppProps } from 'next/app'
@@ -32,6 +33,7 @@ const polySans = localFont({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={polySans.className}>
+      <Navbar />
       <Component {...pageProps} />
       <Footer />
     </main>

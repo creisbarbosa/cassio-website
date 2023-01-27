@@ -6,11 +6,11 @@ import { useState } from 'react';
 export default function Navbar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="w-full relative">
+    <nav className="w-full">
       <div className="justify-between px-6 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
-          <div className="flex items-center justify-between py-8 md:block">
-            <Link href="#">
+          <div className="flex items-center justify-between pt-8 pb-4 md:py-8 md:block">
+            <Link href="/">
               <h2 className="text-xl text-white font-semibold">@creisbarbosa</h2>
             </Link>
             <div className="md:hidden">
@@ -39,7 +39,7 @@ export default function Navbar() {
                   sobre
                 </Link>
               </li>
-              <li className="text-white hover:text-yellow transition-colors">
+              <li className="text-white hover:text-yellow transition-colors cursor-pointer">
                 <div 
                   onClick={() => window.location.replace("/#timeline")}
                 >
