@@ -1,8 +1,49 @@
-import Image from "next/image";
-
-import LandingBg from '../../public/landing_bg.png'
+import { FormEvent, useState } from "react"
 
 export default function Contact() {
+
+  const [ name, setName ] = useState('')
+  const [ email, setEmail ] = useState('')
+  const [ message, setMessage ] = useState('')
+  const [ submitted, setSubmitted ] = useState(false)
+
+  const handleSubmit = async(event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    console.log('Sending request')
+
+    let data = {
+      name,
+      email,
+      message,
+    }
+
+    const options = {
+      method: 'POST',
+      headers: {
+        accept: 
+          'application/json',
+          'content-type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    };
+    
+    await fetch('api/contact', options)
+      .then((res) => {
+        console.log('Response received')
+        console.log(res.status)
+        res.json()
+        if (res.status === 201) {
+          alert('Sua mensagem foi enviada com sucesso e em breve nossa equipe entrará em contato! Obrigado!')
+          setSubmitted(true)
+          setName('')
+          setEmail('')
+          setMessage('')
+
+        }
+      })
+      .catch(err => console.error(err));
+    }
+
   return (
     <section>
         <div className="flex flex-col xl:flex-row px-6 mx-auto xl:max-w-7xl py-6 xl:py-20 w-full relative lg:gap-16">
@@ -12,7 +53,13 @@ export default function Contact() {
                 Vamos conversar!
               </h1>
               <p className="text-white/80 text-base leading-normal max-w-md">Fico feliz por você estar entrando em contato. Seja para tirar dúvidas, fazer comentários ou apenas dizer oi, ficarei contente em receber sua mensagem. <b className="text-white">Farei o máximo para responder o mais breve possível!</b></p>
-              <form action="" className="pt-6 flex flex-col gap-6 max-w-md">
+              <form 
+                action=""  
+                className="pt-6 flex flex-col gap-6 max-w-md"
+                onSubmit={event => {
+                  handleSubmit(event)
+                }}
+              >
                 <div className="flex flex-col gap-3">
                   <label
                     htmlFor="name"
@@ -21,7 +68,12 @@ export default function Contact() {
                     Nome
                   </label>
                   <input 
-                    type="text" 
+                    type="text"
+                    name="name" 
+                    value={name}
+                    onChange={event => {
+                      setName(event.target.value)
+                    }}
                     placeholder="João"
                     required
                     className="px-3 py-2 border-b rounded-none bg-transparent border-white/20 placeholder:text-white/20 focus:outline-none focus:bg-black/20"
@@ -35,7 +87,12 @@ export default function Contact() {
                     Email
                   </label>
                   <input 
-                    type="text" 
+                    type="email"
+                    name="email"
+                    value={email}
+                    onChange={event => {
+                      setEmail(event.target.value)
+                    }}
                     placeholder="joao@email.com"
                     required
                     className="px-3 py-2 border-b rounded-none bg-transparent border-white/20 placeholder:text-white/20 focus:outline-none focus:bg-black/20"
@@ -48,8 +105,13 @@ export default function Contact() {
                   >
                     Mensagem
                   </label>
-                  <textarea 
-                    aria-required
+                  <input 
+                    type="text"
+                    name="message"
+                    value={message}
+                    onChange={event => {
+                      setMessage(event.target.value)
+                    }}
                     required
                     placeholder="Escreva sua mensagem aqui"
                     className="bg-transparent border-b rounded-none border-white/20 px-3 py-2 resize-none h-16 placeholder:text-white/20 focus:outline-none focus:bg-black/20"

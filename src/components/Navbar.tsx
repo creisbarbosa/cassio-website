@@ -52,7 +52,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="text-white hover:text-yellow transition-colors">
-                <Link href="/portfolio">
+                <Link href="/works">
                   portfólio
                 </Link>
               </li>

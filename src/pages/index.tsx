@@ -6,24 +6,27 @@ import Link from "next/link";
 
 const lastProjects = [
   {
-    company: "Peerdustry",
-    project: "Peer System",
-    title: "Industry startup Design System",
-    date: "JUL 22",
+    company: "STUDIO CASSIO REIS",
+    project: "Pulp",
+    title: "Paper pulp pencil case for recicled paper",
+    date: "JUL 20",
+    href: "https://www.behance.net/gallery/92088067/Paper-pulp-pencil-case",
     id: 1
   },
   {
-    company: "Artis Tecnologia",
-    project: "Sonatus",
-    title: "Ultrasonic Surgical Aspirator",
-    date: "JAN 21",
+    company: "STUDIO CASSIO REIS",
+    project: "Curucucu",
+    title: "Namoradeira inspirada na cultura Pirenopolitana",
+    date: "DEZ 17",
+    href: "https://www.behance.net/gallery/130132073/Surgical-Navigation-Instrument-Set",
     id: 2
   },
   {
     company: "Artis Tecnologia",
     project: "Eximius",
-    title: "Surgical Navigator",
+    title: "Set de Instrumentos cirúrgicos para procedimentos minimamente invasivos",
     date: "JUL 20",
+    href: "https://www.behance.net/gallery/54382249/Namoradeira",
     id: 3
   },
 ]
@@ -93,7 +96,7 @@ export default function Home() {
                       >
                         <strong className="h-[22px] aspect-square bg-background rounded-2xl items-center justify-center flex m-1 text-sm font-light">{project.id}</strong>
                         <div className="flex flex-col gap-2">
-                          <Link href='/portfolio' className="font-semibold leading-tight text-xl hover:text-yellow cursor-pointer transition-colors">{project.project} - {project.title}</Link>
+                          <Link href={project.href} className="font-semibold leading-tight text-xl hover:text-yellow cursor-pointer transition-colors">{project.project} - {project.title}</Link>
                           <strong className="font-light text-xs uppercase"><b className="font-medium">{project.company}</b> {project.date}</strong>
                         </div>
                       </div>
