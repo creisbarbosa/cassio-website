@@ -1,4 +1,4 @@
-export default async function Sendingblue(req: { body: { name: any; email: any; company: any; phone: any; message: any; }; }, res: { statusCode: number; setHeader: (arg0: string, arg1: string) => void; end: (arg0: string) => void; }) {
+export default function Sendingblue(req: { body: { name: any; email: any; company: any; phone: any; message: any; }; }, res: { statusCode: number; setHeader: (arg0: string, arg1: string) => void; end: (arg0: string) => void; }) {
 
   const SibApiV3Sdk = require('@sendinblue/client')
   
@@ -18,7 +18,7 @@ export default async function Sendingblue(req: { body: { name: any; email: any; 
   sendSmtpEmail.replyTo = {"email":"creisbarbosa@gmail.com"};
   sendSmtpEmail.params = {"name":`${req.body.name}`,"email":`${req.body.email}`,"message":`${req.body.message}`,}
   
-  await apiInstance.sendTransacEmail(sendSmtpEmail)
+  apiInstance.sendTransacEmail(sendSmtpEmail)
     .then(function(data: any) {
       return new Promise<void>((resolve, reject) => {
         res.statusCode = 201

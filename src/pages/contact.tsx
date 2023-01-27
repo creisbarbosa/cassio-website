@@ -7,7 +7,7 @@ export default function Contact() {
   const [ message, setMessage ] = useState('')
   const [ submitted, setSubmitted ] = useState(false)
 
-  const handleSubmit = async(event: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     console.log('Sending request')
 
@@ -27,7 +27,7 @@ export default function Contact() {
       body: JSON.stringify(data)
     };
     
-    await fetch('api/contact', options)
+    fetch('api/contact', options)
       .then((res) => {
         console.log('Response received')
         console.log(res.status)
