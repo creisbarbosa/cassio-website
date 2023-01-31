@@ -29,9 +29,7 @@ export default function Navbar() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-6 mt-2 md:block md:pb-0 md:mt-0 ${
-              navbar ? 'block' : 'hidden'
-            }`}
+            className={`flex-1 justify-self-center pb-6 mt-2 md:block md:pb-0 md:mt-0 ${ navbar ? 'block' : 'opacity-0 h-0 -my-10' } transition-all ease-in-out duration-150`}
           >
             <ul className="text-xl items-center justify-center space-y-6 md:flex md:space-x-12 md:space-y-0">
               <li className="text-white hover:text-yellow transition-colors">
