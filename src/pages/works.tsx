@@ -5,6 +5,7 @@ import PaperCase from "../../public/paper_case.jpg"
 import Instruments from "../../public/instruments.jpg"
 import Namoradeira from "../../public/chair.webp"
 import PeerWeb from "../../public/peer_website.png"
+import TaskWall from "../../public/taskwall.jpg"
 
 import Cover from "../../public/work_bg.png"
 
@@ -32,6 +33,12 @@ const projects = [
     title: "Peerdustry Website",
     href: "https://peer-website.vercel.app/",
     cover: PeerWeb,
+  },
+  {
+    id: 5,
+    title: "Task Wall",
+    href: "https://github.com/creisbarbosa/task-wall",
+    cover: TaskWall,
   },
 ]
 
