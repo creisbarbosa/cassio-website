@@ -46,16 +46,11 @@ export default function Contact() {
 
   return (
     <section>
-        <div className="flex flex-col xl:flex-row px-6 mx-auto xl:max-w-7xl py-6 xl:py-20 w-full relative lg:gap-16">
-          <div className="basis-1 xl:basis-1/2 flex items-center justify-center">
-            <div className="space-y-8 xl:space-y-6">
-              <h1 className="text-[2rem] xl:text-5xl xl:leading-snug font-bold">
-                Vamos conversar!
-              </h1>
-              <p className="text-white/80 text-base leading-normal max-w-md">Fico feliz por você estar entrando em contato. Seja para tirar dúvidas, fazer comentários ou apenas dizer oi, ficarei contente em receber sua mensagem. <b className="text-white">Farei o máximo para responder o mais breve possível!</b></p>
+        <div className="flex flex-col xl:flex-row px-4 mx-auto xl:max-w-7xl py-6 xl:py-20 w-full relative lg:gap-16">
+          <div className="basis-1 xl:basis-2/3 flex items-center justify-center">
               <form 
                 action=""  
-                className="pt-6 flex flex-col gap-6 max-w-md"
+                className="p-8 md:p-1 flex flex-col gap-6 w-full md:w-2/3"
                 onSubmit={event => {
                   handleSubmit(event)
                 }}
@@ -123,15 +118,14 @@ export default function Contact() {
                   value="Enviar"
                 />
               </form>
-            </div>
           </div>
 
-          <div className="basis-1 xl:basis-1/2 flex items-center justify-center">
-            <svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div className="basis-1 xl:basis-1/3 flex items-center justify-center">
+            <svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" className="rounded-[100%] overflow-hidden animate-spin-slow invisible h-0 w-0 md:visible md:h-[600px] md:w-[600px]">
               <g clip-path="url(#clip0_701_736)">
-                <rect width="600" height="600" rx="32" fill="#0054FF"/>
+                <rect width="600" height="600" fill="" className="fill-background"/>
                 <g filter="url(#filter0_f_701_736)">
-                  <ellipse cx="-200" cy="-80" rx="850" ry="700" fill="#131313"/>
+                  <ellipse cx="-200" cy="-80" rx="850" ry="700" fill="" className="fill-yellow animate-pulse-slow"/>
                 </g>
               </g>
               <defs>

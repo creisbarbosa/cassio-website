@@ -7,26 +7,26 @@ import Link from "next/link";
 const lastProjects = [
   {
     company: "STUDIO CASSIO REIS",
-    project: "Pulp",
-    title: "Paper pulp pencil case for recicled paper",
-    date: "JUL 20",
-    href: "https://www.behance.net/gallery/92088067/Paper-pulp-pencil-case",
+    project: "Task Wall",
+    title: "A simple to-do list application designed to make our daily tasks management experience seamless",
+    date: "JAN 23",
+    href: "https://github.com/creisbarbosa/task-wall",
     id: 1
   },
   {
-    company: "STUDIO CASSIO REIS",
-    project: "Curucucu",
-    title: "Namoradeira inspirada na cultura Pirenopolitana",
-    date: "DEZ 17",
-    href: "https://www.behance.net/gallery/130132073/Surgical-Navigation-Instrument-Set",
+    company: "PEERDUSTRY",
+    project: "Peer Website",
+    title: "Website developed with React and NextJs and designed in Figma",
+    date: "DEZ 22",
+    href: "https://github.com/creisbarbosa/peer-website",
     id: 2
   },
   {
     company: "Artis Tecnologia",
     project: "Eximius",
-    title: "Set de Instrumentos cirúrgicos para procedimentos minimamente invasivos",
+    title: "Set of neurosurgical instruments designed for minimally invasive procedures",
     date: "JUL 20",
-    href: "https://www.behance.net/gallery/54382249/Namoradeira",
+    href: "https://www.behance.net/gallery/130132073/Surgical-Navigation-Instrument-Set",
     id: 3
   },
 ]
@@ -119,7 +119,6 @@ export default function Home() {
           <Timeline/>
           
         </section>
-
 
       </main>
   )

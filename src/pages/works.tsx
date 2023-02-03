@@ -6,6 +6,10 @@ import Instruments from "../../public/instruments.jpg"
 import Namoradeira from "../../public/chair.webp"
 import PeerWeb from "../../public/peer_website.png"
 import TaskWall from "../../public/taskwall.jpg"
+import NetCarShow from "../../public/netcarshow.png"
+import CassioWeb from "../../public/cassioweb.png"
+import ArtisSonatus from "../../public/sonatus.png"
+import PeerSystem from "../../public/peersystem.png"
 
 import Cover from "../../public/work_bg.png"
 
@@ -31,7 +35,7 @@ const projects = [
   {
     id: 4,
     title: "Peerdustry Website",
-    href: "https://peer-website.vercel.app/",
+    href: "https://github.com/creisbarbosa/peer-website",
     cover: PeerWeb,
   },
   {
@@ -39,6 +43,30 @@ const projects = [
     title: "Task Wall",
     href: "https://github.com/creisbarbosa/task-wall",
     cover: TaskWall,
+  },
+  {
+    id: 6,
+    title: "Net Car Show",
+    href: "https://www.figma.com/file/DHjVq7AxbrBk37RrbBZAva/NetCarShow?node-id=0%3A1&t=oAR9ha8YJA8l6MD5-0",
+    cover: NetCarShow,
+  },
+  {
+    id: 7,
+    title: "Cassio Website",
+    href: "https://github.com/creisbarbosa/cassio-website",
+    cover: CassioWeb,
+  },
+  {
+    id: 8,
+    title: "Artis Sonatus",
+    href: "https://www.figma.com/proto/THvwqXHq5KDUgcYva82X5G/Artis---Sonatus?node-id=232%3A1348&starting-point-node-id=232%3A1348&scaling=scale-down",
+    cover: ArtisSonatus,
+  },
+  {
+    id: 9,
+    title: "Peer System",
+    href: "https://www.figma.com/file/icX6rMxt660SsV9a1C8bq9/%F0%9F%8F%AD-Peer-System?t=dFWTe8yGJBSOPuxi-6",
+    cover: PeerSystem,
   },
 ]
 

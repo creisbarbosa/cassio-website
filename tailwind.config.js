@@ -20,6 +20,7 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 60s linear infinite',
+        'pulse-slow': 'pulse 60s infinite',
       },
 
       fontFamily: {
