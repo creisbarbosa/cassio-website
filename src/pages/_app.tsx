@@ -3,6 +3,7 @@ import Navbar from '@/components/Navbar'
 import '@/styles/globals.css'
 import localFont from '@next/font/local'
 import type { AppProps } from 'next/app'
+import { Analytics } from '@vercel/analytics/react';
 
 const polySans = localFont({
   variable: '--font-poly',
@@ -36,6 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Navbar />
       <Component {...pageProps} />
       <Footer />
+      <Analytics />
     </main>
   )
 }
