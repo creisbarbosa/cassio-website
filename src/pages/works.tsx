@@ -10,6 +10,7 @@ import NetCarShow from "../../public/netcarshow.png"
 import CassioWeb from "../../public/cassioweb.png"
 import ArtisSonatus from "../../public/sonatus.png"
 import PeerSystem from "../../public/peersystem.png"
+import IgniteTimer from "../../public/ignite-timer.png"
 
 import Cover from "../../public/work_bg.png"
 
@@ -67,6 +68,12 @@ const projects = [
     title: "Peer System",
     href: "https://www.figma.com/file/icX6rMxt660SsV9a1C8bq9/%F0%9F%8F%AD-Peer-System?t=dFWTe8yGJBSOPuxi-6",
     cover: PeerSystem,
+  },
+  {
+    id: 10,
+    title: "Ignite Timer",
+    href: "https://github.com/creisbarbosa/ignite-timer/",
+    cover: IgniteTimer,
   },
 ]
 
