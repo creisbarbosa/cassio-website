@@ -8,55 +8,55 @@ export default function Timeline() {
     {
       id: 1,
       company: "Lamparina Design",
-      role: "Designer Estagiário",
-      period: "2011 - 2017",
-      text: "Na Lamparina comecei a atuar como Designer Gráfico. Pude liderar equipes na criação de identidades visuais e peças gráficas para médias e pequenas empresas aplicando métodos ágeis e design thinking no desenvolvimento de projetos de baixa e média complexidade.",
-      firstSkills: "Desenvolvimento de Identidades Visuais / Design Thinking",
-      secondSkills: "Adobe Illustrator / Photoshop"
+      role: "Designer Intern",
+      period: "2011 - 2012",
+      text: "At Lamparina i started my career as a Graphic Designer.Here i was able to lead teams in the creation of visual identities and graphic components for small companies.",
+      firstSkills: "Branding / Design Thinking / Marketing",
+      secondSkills: "Illustrator / Photoshop"
     },
     {
       id: 2,
-      company: "Conselho Regional de Adm",
-      role: "Designer Estagiário",
+      company: "Regional Board of Administration",
+      role: "Designer Intern",
       period: "2015 - 2016",
-      text: "No CRA-DF, fui Diagramador responsável pela criação dos periódicos bimestrais do conselho, peças gráficas para redes sociais, email marketing e vídeos institucionais.",
-      firstSkills: "Diagramação / Edição de vídeos",
-      secondSkills: "Adobe InDesign / After Effects"
+      text: "At CRA-DF, I was the responsible Layout Designer for creating the council's bi-monthly newspapers, graphic pieces for social media, email marketing, and institutional videos.",
+      firstSkills: "Newspaper Layout / Video editing / Social media",
+      secondSkills: "InDesign / After Effects"
     },
     {
       id: 3,
       company: "Manufatura Creative",
-      role: "Designer Estagiário",
+      role: "Designer Inter",
       period: "2016 - 2017",
-      text: "Como designer estagiário auxiliei o escritório na criação de identidades visuais, branding, fotografia, vídeo,  design de cenário, mobiliário e pequenos produtos. Fui responsável pela criação de websites e conteúdos digitais.",
-      firstSkills: "Webdesign / Fotografia / Branding / UX",
-      secondSkills: "Adobe XD / Adobe Premier-Pro"
+      text: "As a design intern, I assisted the office in creating visual identities, branding, photography, video, set design, furniture design, and small products. I was also responsible for creating websites and digital content.",
+      firstSkills: "Web design / Photo / Photo editing / Branding / UX",
+      secondSkills: "Adobe XD / Premier-Pro"
     },
     {
       id: 4,
       company: "Manufatura Creative",
-      role: "Designer de Produto Junior",
+      role: "Product Designer Jr",
       period: "2017 - 2018",
-      text: "Como Designer atuei na criação de identidades visuais e webdesign para médias e grandes empresas na indústria da moda, alimentação, varejo e ONGs. Pude aprender prototipação rápida para apps e web, métodos de entrevistas com usuários, UX writing  e metodologia de sprint.",
-      firstSkills: "UX Writing / Design de Aplicativos / User Interface Design",
-      secondSkills: "Metodologia de Sprints / Prototipação / Figma "
+      text: "As a Designer, I worked on creating visual identities and web design for medium and large companies in the fashion, food, retail, and NGO companies. I was able to learn rapid prototyping for apps and web, user interview methods, UX writing, and sprint methodology.",
+      firstSkills: "UX Writing / App design / UI design",
+      secondSkills: "Sprints / Prototype / Figma / Sketch"
     },
     {
       id: 5,
       company: "Artis Tecnologia",
-      role: "Designer de Produto Pleno",
+      role: "Product Designer",
       period: "2019 - 2022",
-      text: "Designer de Produtos responsável pelo desenvolvimento de software e interfaces de produtos de média e alta complexidade para Neurocirurgias: wireframes, arquitetura de informação.",
-      firstSkills: "UI Kit / Kanban / Shadowing / Testes A B / UX Research / Entrevistas com usuários",
+      text: "As a Product Designer, I was responsible for the development of software and interfaces for medium to high complexity products for Neurosurgery, including wireframes and information architecture.",
+      firstSkills: "UI Kit / Kanban / Shadowing / A-B Testing / UX Research / User interviews",
       secondSkills: "HTML / CSS / JavaScript / Git / Bootstrap"
     },
     {
       id: 6,
       company: "Peerdustry",
-      role: "Designer de Produto Pleno / Desenvolvedor Front-end Jr.",
-      period: "desde 2022",
-      text: "Na Peerdustry atuo como Designer de Produtos e Front-end dev responsável pela reestruturação do software  B2B de usinagem industrial.",
-      firstSkills: "Programação Front-end / Scrum / Product Management",
+      role: "Product Designer / Front-end Dev Jr",
+      period: "2022 - 2023",
+      text: "At Peerdustry, I worked as a Product Designer and Front-end developer responsible for the restructuring of the B2B industrial machining company's  software.",
+      firstSkills: "Front-end / Scrum / Product Management",
       secondSkills: "TypeScript / NodeJs / NPM / React / React Native / NextJs / StoryBook / Firebase / Vercel"
     },
   ]
@@ -78,8 +78,8 @@ export default function Timeline() {
                   <strong className="text-sm text-white/60">{job.period}</strong>
                   <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
                   <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
-                  <p className="text-cyan mt-3 max-w-[25rem]">{job.firstSkills}</p>
-                  <p className="text-cyan max-w-[25rem]">{job.secondSkills}</p>
+                  <p className="text-yellow mt-3 max-w-[25rem]">{job.firstSkills}</p>
+                  <p className="text-yellow max-w-[25rem]">{job.secondSkills}</p>
                 </div>
               )
             })}
@@ -100,8 +100,8 @@ export default function Timeline() {
                   <strong className="text-sm text-white/60">{job.period}</strong>
                   <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
                   <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
-                  <p className="text-cyan mt-3">{job.firstSkills}</p>
-                  <p className="text-cyan max-w-[25rem]">{job.secondSkills}</p>
+                  <p className="text-yellow mt-3">{job.firstSkills}</p>
+                  <p className="text-yellow max-w-[25rem]">{job.secondSkills}</p>
                 </div>
               )
             })}
@@ -133,8 +133,8 @@ export default function Timeline() {
                   <strong className="text-sm text-white/60">{job.period}</strong>
                   <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
                   <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
-                  <p className="text-cyan mt-3 max-w-[25rem]">{job.firstSkills}</p>
-                  <p className="text-cyan max-w-[25rem]">{job.secondSkills}</p>
+                  <p className="text-yellow mt-3 max-w-[25rem]">{job.firstSkills}</p>
+                  <p className="text-yellow max-w-[25rem]">{job.secondSkills}</p>
                 </div>
               )
             })}

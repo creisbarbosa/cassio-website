@@ -60,7 +60,7 @@ export default function Contact() {
                     htmlFor="name"
                     className="uppercase text-xs font-bold text-white/90"
                   >
-                    Nome
+                    Name
                   </label>
                   <input 
                     type="text"
@@ -69,7 +69,7 @@ export default function Contact() {
                     onChange={event => {
                       setName(event.target.value)
                     }}
-                    placeholder="João"
+                    placeholder="John Doe"
                     required
                     className="px-3 py-2 border-b rounded-none bg-transparent border-white/20 placeholder:text-white/20 focus:outline-none focus:bg-black/20"
                   />
@@ -79,7 +79,7 @@ export default function Contact() {
                     htmlFor="email"
                     className="uppercase text-xs font-bold text-white/90"
                   >
-                    Email
+                    E-mail
                   </label>
                   <input 
                     type="email"
@@ -88,7 +88,7 @@ export default function Contact() {
                     onChange={event => {
                       setEmail(event.target.value)
                     }}
-                    placeholder="joao@email.com"
+                    placeholder="johndoe@email.com"
                     required
                     className="px-3 py-2 border-b rounded-none bg-transparent border-white/20 placeholder:text-white/20 focus:outline-none focus:bg-black/20"
                   />
@@ -98,7 +98,7 @@ export default function Contact() {
                     htmlFor="message"
                     className="uppercase text-xs font-bold text-white/90"
                   >
-                    Mensagem
+                    Message
                   </label>
                   <input 
                     type="text"
@@ -108,7 +108,7 @@ export default function Contact() {
                       setMessage(event.target.value)
                     }}
                     required
-                    placeholder="Escreva sua mensagem aqui"
+                    placeholder="Your message here"
                     className="bg-transparent border-b rounded-none border-white/20 px-3 py-2 resize-none h-16 placeholder:text-white/20 focus:outline-none focus:bg-black/20"
                   />
                 </div>

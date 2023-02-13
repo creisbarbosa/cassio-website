@@ -46,12 +46,12 @@ export default function Navbar() {
               </li> */}
               <li className="text-white hover:text-yellow transition-colors">
                 <Link href="/contact">
-                  contato
+                  contact
                 </Link>
               </li>
-              <li className="text-white hover:text-yellow transition-colors">
-                <Link href="/works">
-                  portfólio
+              <li >
+                <Link href="/works" className="text-white bg-yellow px-4 pb-2 pt-1 rounded-sm hover:text-yellow hover:bg-cyan  transition-colors">
+                  works
                 </Link>
               </li>
             </ul>
