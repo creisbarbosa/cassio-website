@@ -13,7 +13,7 @@ const lastProjects = [
     project: "Peerdustry's Website",
     title: " ",
     date: "JAN 23",
-    href: "https://github.com/creisbarbosa/peer-website",
+    href: "https://peer-website-creisbarbosa.vercel.app/",
     img: PeerWeb,
     id: 1
   },
