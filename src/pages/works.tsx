@@ -134,7 +134,7 @@ export default function Works() {
         <div className="min-h-screen pb-3">
 
           <strong className="bg-white/10 px-4 py-2 rounded-[60px]">UX Cases</strong>
-          <div className="flex flex-col gap-8 xl:grid xl:grid-cols-4 mt-8 mb-16">
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
             {projects.map(project => {
               if (project.tag.includes("UX"))
               return (
@@ -152,7 +152,7 @@ export default function Works() {
           </div>
 
           <strong className="bg-white/10 px-4 py-2 rounded-[60px]">Design Systems</strong>
-          <div className="flex flex-col gap-8 xl:grid xl:grid-cols-4 mt-8 mb-16">
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
             {projects.map(project => {
               if (project.tag.includes("Design System"))
               return (
@@ -170,7 +170,7 @@ export default function Works() {
           </div>
 
           <strong className="bg-white/10 px-4 py-2 rounded-[60px]">Front-end dev + UI Design</strong>
-          <div className="flex flex-col gap-8 xl:grid xl:grid-cols-4 mt-8 mb-16">
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
             {projects.map(project => {
               if (project.tag.includes("Front"))
               return (
@@ -188,7 +188,7 @@ export default function Works() {
           </div>
 
           <strong className="bg-white/10 px-4 py-2 rounded-[60px]">UI Design</strong>
-          <div className="flex flex-col gap-8 xl:grid xl:grid-cols-4 mt-8 mb-16">
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
             {projects.map(project => {
               if (project.tag.includes("UI"))
               return (
@@ -206,7 +206,7 @@ export default function Works() {
           </div>
 
           <strong className="bg-white/10 px-4 py-2 rounded-[60px]">Industrial Design</strong>
-          <div className="flex flex-col gap-8 xl:grid xl:grid-cols-4 mt-8 mb-16">
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
             {projects.map(project => {
               if (project.tag.includes("Industrial Design"))
               return (
