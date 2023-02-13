@@ -99,7 +99,7 @@ export default function Timeline() {
                   <strong className="text-sm font-normal text-white/60">{job.role}</strong>
                   <strong className="text-sm text-white/60">{job.period}</strong>
                   <p className="text-white/80 mt-5 max-w-[25rem]">{job.text}</p>
-                  <h3 className="text-cyan font-bold mt-3">Novas habilidades ↙</h3>
+                  <h3 className="text-cyan font-bold mt-3">New skills ↙</h3>
                   <p className="text-yellow mt-3">{job.firstSkills}</p>
                   <p className="text-yellow max-w-[25rem]">{job.secondSkills}</p>
                 </div>
