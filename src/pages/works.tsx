@@ -16,6 +16,7 @@ import CRBMoney from "../../public/crbmoney.png"
 import Eximius from "../../public/eximius.png"
 import Hive from "../../public/hive.png"
 import Lavi from "../../public/lavi.png"
+import Vertice from "../../public/vertice.png"
 
 import Cover from "../../public/work_bg.png"
 
@@ -124,6 +125,13 @@ const projects = [
     href: "https://www.figma.com/proto/JGTxYb5ySgoVyiHuVgxmDK/Lavi?page-id=0%3A1&node-id=1%3A303&viewport=6070%2C498%2C0.28&scaling=contain&starting-point-node-id=1%3A303",
     cover: Lavi,
     tag: "UX"
+  },
+  {
+    id: 16,
+    title: "Vertice - Cafés especiais",
+    href: "https://www.figma.com/file/Wb0TqrLoH4gPy97fDgYn1u/V%C3%A9rtice?node-id=0%3A1&t=jeWogKUzfTqKXQWB-1",
+    cover: Vertice,
+    tag: "UI"
   },
 ]
 
