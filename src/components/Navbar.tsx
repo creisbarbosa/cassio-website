@@ -50,7 +50,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li >
-                <Link href="/works" className="text-white bg-yellow px-4 pb-2 pt-1 rounded-sm hover:text-yellow hover:bg-cyan  transition-colors">
+                <Link href="/works" className="text-white bg-yellow px-4 pb-2 pt-1 rounded-xl hover:text-yellow hover:bg-cyan  transition-colors">
                   works
                 </Link>
               </li>

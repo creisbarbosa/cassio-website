@@ -43,7 +43,7 @@ export default function Home() {
                   &lsaquo;<b>Front-end Dev</b> /&rsaquo; <br />
                   from Brasilia, Brazil
                 </h1>
-                <p className="text-white/70 text-base leading-normal"><b className="text-white">With background in Industrial Design, i developed myself as a Product Design and Front-end Developer</b>. I&apos;ve been able to work with different types of development teams and several types of projects related to industries such as retail, healthcare, food and public organizations. Until recently i was part of Peerdustry&apos;s product team as Product Designer and Front-end Developer.</p>
+                <p className="text-white/70 text-base leading-normal">{/*<b className="text-white">With background in Industrial Design, i developed myself as a Product Design and Front-end Developer</b>.*/} I&apos;ve been able to work with different types of development teams and several types of projects related to industries such as retail, healthcare, food and public organizations. Until recently i was part of Peerdustry&apos;s product team as Product Designer and Front-end Developer.</p>
               </div>
             </div>
 
