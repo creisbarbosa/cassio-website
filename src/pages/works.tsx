@@ -69,7 +69,7 @@ const projects = [
   {
     id: 8,
     title: "Artis Sonatus",
-    href: "https://www.figma.com/proto/THvwqXHq5KDUgcYva82X5G/Artis---Sonatus?node-id=232%3A1348&starting-point-node-id=232%3A1348&scaling=scale-down",
+    href: "https://www.figma.com/proto/THvwqXHq5KDUgcYva82X5G/Artis---Sonatus?page-id=0%3A1&node-id=712%3A1348&viewport=875%2C-58%2C0.09&scaling=scale-down-width&starting-point-node-id=712%3A1348&show-proto-sidebar=1&hide-ui=1",
     cover: ArtisSonatus,
     tag: "UX"
   },
