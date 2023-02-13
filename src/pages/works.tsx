@@ -13,6 +13,9 @@ import ArtisSystem from "../../public/artis_system.png"
 import PeerSystem from "../../public/peersystem.png"
 import IgniteTimer from "../../public/ignite-timer.png"
 import CRBMoney from "../../public/crbmoney.png"
+import Eximius from "../../public/eximius.png"
+import Hive from "../../public/hive.png"
+import Lavi from "../../public/lavi.png"
 
 import Cover from "../../public/work_bg.png"
 
@@ -88,7 +91,7 @@ const projects = [
     tag: "Front-end"
   },
   {
-    id: 12,
+    id: 11,
     title: "Artis System",
     href: "https://www.figma.com/file/NDtGP4k4w2LE9Coss2ADMO/Artis-Design-Systyem?node-id=0%3A1&t=cbQ0wMe4oQhL4XYI-1",
     cover: ArtisSystem,
@@ -100,6 +103,27 @@ const projects = [
     href: "https://github.com/creisbarbosa/crb-money",
     cover: CRBMoney,
     tag: "Front-end"
+  },
+  {
+    id: 13,
+    title: "Eximius - Neurosurgery System",
+    href: "https://www.figma.com/proto/hvzYQ1pfqv9PGBU79KgzfQ/Eximius?page-id=0%3A1&node-id=0%3A145&viewport=16060%2C367%2C0.43&scaling=contain&starting-point-node-id=0%3A453",
+    cover: Eximius,
+    tag: "UX"
+  },
+  {
+    id: 14,
+    title: "Hive - Dating App",
+    href: "https://www.figma.com/proto/XuVYrq5rujQqDrVML7kavs/Hive---Aplicativo?page-id=302%3A1772&node-id=302%3A2047&viewport=825%2C480%2C0.05&scaling=contain&starting-point-node-id=302%3A2047",
+    cover: Hive,
+    tag: "UX"
+  },
+  {
+    id: 15,
+    title: "Lavi - Raw for good",
+    href: "https://www.figma.com/proto/JGTxYb5ySgoVyiHuVgxmDK/Lavi?page-id=0%3A1&node-id=1%3A303&viewport=6070%2C498%2C0.28&scaling=contain&starting-point-node-id=1%3A303",
+    cover: Lavi,
+    tag: "UX"
   },
 ]
 
