@@ -50,8 +50,8 @@ export default function Navbar() {
                 </Link> */}
               </li>
               <li >
-                <Link href="/works" className="text-white bg-yellow px-4 pb-2 pt-1 rounded-xl hover:text-yellow hover:bg-cyan  transition-colors">
-                  works
+                <Link href="/works" className="text-white bg-yellow px-5 pb-2 pt-1 rounded-3xl hover:text-yellow hover:bg-cyan  transition-colors">
+                  portfolio
                 </Link>
               </li>
             </ul>

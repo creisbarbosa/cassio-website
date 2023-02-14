@@ -19,6 +19,7 @@ import Lavi from "../../public/lavi.png"
 import Vertice from "../../public/vertice.png"
 
 import Cover from "../../public/work_bg.png"
+import Head from "next/head";
 
 const projects = [
   {
@@ -138,6 +139,9 @@ const projects = [
 export default function Works() {
   return (
     <section>
+      <Head>
+        <title>portfolio</title>
+      </Head>
       <div className="flex flex-col px-6 mx-auto xl:max-w-7xl py-6 xl:py-20 gap-12 lg:gap-16">
         <div className="min-h-screen pb-3">
 

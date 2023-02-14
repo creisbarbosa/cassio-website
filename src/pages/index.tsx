@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from 'next/head'
 
 import AcademicBg from '../../public/academic_bg.png'
 import Timeline from "@/components/Timeline";
@@ -31,6 +32,9 @@ const lastProjects = [
 export default function Home() {
   return (
       <main>
+        <Head>
+          <title>Cassio Reis</title>
+        </Head>
         <section>
           <div className="flex flex-col xl:flex-row px-6 mx-auto xl:max-w-7xl py-6 xl:py-20 w-full relative gap-16">
             <div className="basis-1 xl:basis-1/2 flex items-center">
