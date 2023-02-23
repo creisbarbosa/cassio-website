@@ -10,7 +10,7 @@ export default function Timeline() {
       company: "Lamparina Design",
       role: "Designer Intern",
       period: "2011 - 2012",
-      text: "At Lamparina i started my career as a Graphic Designer.Here i was able to lead teams in the creation of visual identities and graphic components for small companies.",
+      text: "At Lamparina I started my career as a Graphic Designer. Here I was able to lead teams in the creation of visual identities and graphic components for small companies.",
       firstSkills: "Branding / Design Thinking / Marketing",
       secondSkills: "Illustrator / Photoshop"
     },

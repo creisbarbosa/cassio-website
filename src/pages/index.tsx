@@ -47,7 +47,7 @@ export default function Home() {
                   &lsaquo;<b>Front-end Dev</b> /&rsaquo; <br />
                   from Brasilia, Brazil
                 </h1>
-                <p className="text-white/70 text-base leading-normal">{/*<b className="text-white">With background in Industrial Design, i developed myself as a Product Design and Front-end Developer</b>.*/} I&apos;ve been able to work with different types of development teams and several types of projects related to industries such as retail, healthcare, food and public organizations. Until recently i was part of Peerdustry&apos;s product team as Product Designer and Front-end Developer.</p>
+                <p className="text-white/70 text-base leading-normal">{/*<b className="text-white">With background in Industrial Design, i developed myself as a Product Design and Front-end Developer</b>.*/} I&apos;ve been able to work with different types of development teams and several types of projects related to industries such as retail, healthcare, food and public organizations. Until recently I was part of Peerdustry&apos;s product team as Product Designer and Front-end Developer.</p>
               </div>
             </div>
 
@@ -79,7 +79,7 @@ export default function Home() {
             <div className="space-y-2 relative">
               <h3 className="text-xl xl:text-2xl font-semibold xl:font-bold">Industrial Design - University of Brasília</h3>
               <strong className="text-gray-400">2011-2016</strong>
-              <p className="pt-3 max-w-md">As a product designer student i could develop researches around service design and product manufacturing since day one at Brasília&apos;s University.  Getting in touch with the best practices of Design Thinking and putting it to test with real user&apos;s problems, gave me the real-world experience i needed become a market-ready professional.</p>
+              <p className="pt-3 max-w-md">As a product designer student I could develop researches around service design and product manufacturing since day one at Brasília&apos;s University.  Getting in touch with the best practices of Design Thinking and putting it to test with real user&apos;s problems, gave me the real-world experience I needed become a market-ready professional.</p>
             </div>
           </div>
         </section>
