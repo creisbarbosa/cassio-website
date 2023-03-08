@@ -17,6 +17,7 @@ import Eximius from "../../public/eximius.png"
 import Hive from "../../public/hive.png"
 import Lavi from "../../public/lavi.png"
 import Vertice from "../../public/vertice.png"
+import PeerUx from "../../public/peer-ux-case.png"
 
 import Cover from "../../public/work_bg.png"
 import Head from "next/head";
@@ -133,6 +134,13 @@ const projects = [
     href: "https://www.figma.com/file/Wb0TqrLoH4gPy97fDgYn1u/V%C3%A9rtice?node-id=0%3A1&t=jeWogKUzfTqKXQWB-1",
     cover: Vertice,
     tag: "UI"
+  },
+  {
+    id: 17,
+    title: "UX Case - Peerdustry Job Board",
+    href: "https://www.figma.com/proto/HGeVk8XNG1anPz0NkL5XJc/UX-Case---Peerdustry-Job-Board?page-id=0%3A1&node-id=1-3&viewport=460%2C429%2C0.11&scaling=scale-down-width",
+    cover: PeerUx,
+    tag: "UX"
   },
 ]
 
