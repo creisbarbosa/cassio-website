@@ -114,20 +114,20 @@ const projects = [
     cover: Eximius,
     tag: "UX"
   },
-  {
-    id: 14,
-    title: "Hive - Dating App",
-    href: "https://www.figma.com/proto/XuVYrq5rujQqDrVML7kavs/Hive---Aplicativo?page-id=302%3A1772&node-id=302%3A2047&viewport=825%2C480%2C0.05&scaling=contain&starting-point-node-id=302%3A2047",
-    cover: Hive,
-    tag: "UX"
-  },
-  {
-    id: 15,
-    title: "Lavi - Raw for good",
-    href: "https://www.figma.com/proto/JGTxYb5ySgoVyiHuVgxmDK/Lavi?page-id=0%3A1&node-id=1%3A303&viewport=6070%2C498%2C0.28&scaling=contain&starting-point-node-id=1%3A303",
-    cover: Lavi,
-    tag: "UX"
-  },
+  // {
+  //   id: 14,
+  //   title: "Hive - Dating App",
+  //   href: "https://www.figma.com/proto/XuVYrq5rujQqDrVML7kavs/Hive---Aplicativo?page-id=302%3A1772&node-id=302%3A2047&viewport=825%2C480%2C0.05&scaling=contain&starting-point-node-id=302%3A2047",
+  //   cover: Hive,
+  //   tag: "UX"
+  // },
+  // {
+  //   id: 15,
+  //   title: "Lavi - Raw for good",
+  //   href: "https://www.figma.com/proto/JGTxYb5ySgoVyiHuVgxmDK/Lavi?page-id=0%3A1&node-id=1%3A303&viewport=6070%2C498%2C0.28&scaling=contain&starting-point-node-id=1%3A303",
+  //   cover: Lavi,
+  //   tag: "UX"
+  // },
   {
     id: 16,
     title: "Vertice - Cafés especiais",
