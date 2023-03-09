@@ -135,13 +135,13 @@ const projects = [
     cover: Vertice,
     tag: "UI"
   },
-  {
-    id: 17,
-    title: "UX Case - Peerdustry Job Board",
-    href: "https://www.figma.com/proto/HGeVk8XNG1anPz0NkL5XJc/UX-Case---Peerdustry-Job-Board?page-id=0%3A1&node-id=1-3&viewport=460%2C429%2C0.11&scaling=scale-down-width",
-    cover: PeerUx,
-    tag: "UX"
-  },
+  // {
+  //   id: 17,
+  //   title: "UX Case - Peerdustry Job Board",
+  //   href: "https://www.figma.com/proto/HGeVk8XNG1anPz0NkL5XJc/UX-Case---Peerdustry-Job-Board?page-id=0%3A1&node-id=1-3&viewport=460%2C429%2C0.11&scaling=scale-down-width",
+  //   cover: PeerUx,
+  //   tag: "UX"
+  // },
 ]
 
 export default function Works() {
