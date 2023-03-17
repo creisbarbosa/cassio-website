@@ -14,7 +14,7 @@ const lastProjects = [
     project: "Peerdustry's Website",
     title: " ",
     date: "JAN 23",
-    href: "https://peer-website-creisbarbosa.vercel.app/",
+    href: "https://peerdustry.com/",
     img: PeerWeb,
     id: 1
   },
@@ -44,7 +44,6 @@ export default function Home() {
                   Hi! <br />
                   I&apos;m Cassio Reis <br />
                   &lsaquo;<b>Product Designer</b> /&rsaquo; <br />
-                  &lsaquo;<b>Front-end Dev</b> /&rsaquo; <br />
                   from Brasilia, Brazil
                 </h1>
                 <p className="text-white/70 text-base leading-normal">{/*<b className="text-white">With background in Industrial Design, i developed myself as a Product Design and Front-end Developer</b>.*/} I&apos;ve been able to work with different types of development teams and several types of projects related to industries such as retail, healthcare, food and public organizations. Until recently I was part of Peerdustry&apos;s product team as Product Designer and Front-end Developer.</p>

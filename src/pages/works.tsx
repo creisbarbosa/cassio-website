@@ -49,14 +49,14 @@ const projects = [
     title: "Peerdustry Website",
     href: "https://github.com/creisbarbosa/peer-website",
     cover: PeerWeb,
-    tag: "Front-end"
+    tag: "UI"
   },
   {
     id: 5,
     title: "Task Wall",
     href: "https://github.com/creisbarbosa/task-wall",
     cover: TaskWall,
-    tag: "Front-end"
+    tag: "UI"
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const projects = [
     title: "Cassio Website",
     href: "https://github.com/creisbarbosa/cassio-website",
     cover: CassioWeb,
-    tag: "Front-end"
+    tag: "UI"
   },
   {
     id: 8,
@@ -81,7 +81,7 @@ const projects = [
   },
   {
     id: 9,
-    title: "Peer System",
+    title: "Peer System (Sample",
     href: "https://www.figma.com/proto/yeOdmOhZnGNKpSMI0xoyKN/Peerdustry's-Design-System?page-id=874%3A1130&node-id=1713%3A1078",
     cover: PeerSystem,
     tag: "Design System"
@@ -91,11 +91,11 @@ const projects = [
     title: "Ignite Timer",
     href: "https://github.com/creisbarbosa/ignite-timer/",
     cover: IgniteTimer,
-    tag: "Front-end"
+    tag: "UI"
   },
   {
     id: 11,
-    title: "Artis System",
+    title: "Artis System (Sample)",
     href: "https://www.figma.com/file/NDtGP4k4w2LE9Coss2ADMO/Artis-Design-Systyem?node-id=0%3A1&t=cbQ0wMe4oQhL4XYI-1",
     cover: ArtisSystem,
     tag: "Design System"
@@ -105,7 +105,7 @@ const projects = [
     title: "CRB Money",
     href: "https://github.com/creisbarbosa/crb-money",
     cover: CRBMoney,
-    tag: "Front-end"
+    tag: "UI"
   },
   {
     id: 13,
@@ -114,27 +114,27 @@ const projects = [
     cover: Eximius,
     tag: "UX"
   },
-  // {
-  //   id: 14,
-  //   title: "Hive - Dating App",
-  //   href: "https://www.figma.com/proto/XuVYrq5rujQqDrVML7kavs/Hive---Aplicativo?page-id=302%3A1772&node-id=302%3A2047&viewport=825%2C480%2C0.05&scaling=contain&starting-point-node-id=302%3A2047",
-  //   cover: Hive,
-  //   tag: "UX"
-  // },
-  // {
-  //   id: 15,
-  //   title: "Lavi - Raw for good",
-  //   href: "https://www.figma.com/proto/JGTxYb5ySgoVyiHuVgxmDK/Lavi?page-id=0%3A1&node-id=1%3A303&viewport=6070%2C498%2C0.28&scaling=contain&starting-point-node-id=1%3A303",
-  //   cover: Lavi,
-  //   tag: "UX"
-  // },
   {
-    id: 16,
-    title: "Vertice - Cafés especiais",
-    href: "https://www.figma.com/file/Wb0TqrLoH4gPy97fDgYn1u/V%C3%A9rtice?node-id=0%3A1&t=jeWogKUzfTqKXQWB-1",
-    cover: Vertice,
+    id: 14,
+    title: "Hive - Dating App",
+    href: "https://www.figma.com/proto/XuVYrq5rujQqDrVML7kavs/Hive---Aplicativo?page-id=302%3A1772&node-id=302%3A2047&viewport=825%2C480%2C0.05&scaling=contain&starting-point-node-id=302%3A2047",
+    cover: Hive,
     tag: "UI"
   },
+  {
+    id: 15,
+    title: "Lavi - Raw for good",
+    href: "https://www.figma.com/proto/JGTxYb5ySgoVyiHuVgxmDK/Lavi?page-id=0%3A1&node-id=1%3A303&viewport=6070%2C498%2C0.28&scaling=contain&starting-point-node-id=1%3A303",
+    cover: Lavi,
+    tag: "UI"
+  },
+  // {
+  //   id: 16,
+  //   title: "Vertice - Cafés especiais",
+  //   href: "https://www.figma.com/file/Wb0TqrLoH4gPy97fDgYn1u/V%C3%A9rtice?node-id=0%3A1&t=jeWogKUzfTqKXQWB-1",
+  //   cover: Vertice,
+  //   tag: "UI"
+  // },
   // {
   //   id: 17,
   //   title: "UX Case - Peerdustry Job Board",
@@ -189,24 +189,6 @@ export default function Works() {
             })}
           </div>
 
-          <strong className="bg-white/10 px-4 py-2 rounded-[60px]">Front-end dev + UI Design</strong>
-          <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
-            {projects.map(project => {
-              if (project.tag.includes("Front"))
-              return (
-                <Link
-                  key={project.id}
-                  href={project.href}
-                  target="blank"
-                  className="h-52 cursor-pointer rounded-md border border-white/20 relative group transition-all overflow-hidden">
-                  <Image src={project.cover} alt="" className="absolute object-cover"/>
-                  <Image src={Cover} alt="" className="h-full w-full absolute object-cover lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity" />
-                  <h2 className="absolute bottom-3 text-base font-semibold left-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity">{project.title}</h2>
-                </Link>
-              )
-            })}
-          </div>
-
           <strong className="bg-white/10 px-4 py-2 rounded-[60px]">UI Design</strong>
           <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
             {projects.map(project => {
@@ -224,6 +206,24 @@ export default function Works() {
               )
             })}
           </div>
+
+          {/* <strong className="bg-white/10 px-4 py-2 rounded-[60px]">UI Design</strong>
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
+            {projects.map(project => {
+              if (project.tag.includes("UI"))
+              return (
+                <Link
+                  key={project.id}
+                  href={project.href}
+                  target="blank"
+                  className="h-52 cursor-pointer rounded-md border border-white/20 relative group transition-all overflow-hidden">
+                  <Image src={project.cover} alt="" className="absolute object-cover"/>
+                  <Image src={Cover} alt="" className="h-full w-full absolute object-cover lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity" />
+                  <h2 className="absolute bottom-3 text-base font-semibold left-4 lg:opacity-0 lg:group-hover:opacity-100 lg:transition-opacity">{project.title}</h2>
+                </Link>
+              )
+            })}
+          </div> */}
 
           <strong className="bg-white/10 px-4 py-2 rounded-[60px]">Industrial Design</strong>
           <div className="flex flex-col gap-8 md:grid md:grid-cols-3 xl:grid-cols-4 mt-8 mb-16">
